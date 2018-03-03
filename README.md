@@ -12,16 +12,16 @@ This project is/will be done in the setting of the course 'Projekt 2' of the [Be
 ### Project planning / Time Schedule
 A rough overview of how i plan on spending my time during this course. 
 #### Part 1 - Research (CW 9-14 | 26.02.2018 - 02.04.2018)
-    * Research, describe and explain theoretical key concepts such as the rendering equation and the bidirectional reflectance distributon function
-    * Give an overview about the current methods used to 'solve' the rendering equation in real time used by state of the art computer graphics software such as modeling software or 3D engines (Unity3D, Blender, Unreal Engine)
+* Research, describe and explain theoretical key concepts such as the rendering equation and the bidirectional reflectance distributon function
+* Give an overview about the current methods used to 'solve' the rendering equation in real time used by state of the art computer graphics software such as modeling software or 3D engines (Unity3D, Blender, Unreal Engine)
  
 #### Part 2 - Deep dive (CW 14-19 | 02.04.2018 - 07.05.2018)
-    * Of a certain key method or aspect that has been described in Part 1 (e.g. Irradiance maps, spherical harmonics ):
-      * Write a prototype for demonstrational purposes
-      * Describe usage, justification, advantages and disadvantages
+* Of a certain key method or aspect that has been described in Part 1 (e.g. Irradiance maps, spherical harmonics ):
+  * Write a prototype for demonstrational purposes
+  * Describe usage, justification, advantages and disadvantages
       
 #### Part 3 - Distil (CW 19-24 | 07.05.2018 - 11.06.2018)
-    * Boil down the documentation into a few easy digestable pages
-    * Identify a specific topic worthy of further research 
-    * Formulate a research objective for my bachelor thesis :-) 
+* Boil down the documentation into a few easy digestable pages
+* Identify a specific topic worthy of further research 
+* Formulate a research objective for my bachelor thesis :-) 
 
