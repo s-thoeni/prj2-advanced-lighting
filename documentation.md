@@ -20,7 +20,7 @@ This is the equation as presented on wikipedia:
   <img src="https://latex.codecogs.com/gif.latex?L_{\text{o}}(\mathbf&space;x,&space;\omega_{\text{o}},&space;\lambda,&space;t)&space;=&space;L_e(\mathbf&space;x,&space;\omega_{\text{o}},&space;\lambda,&space;t)&space;&plus;&space;\int_\Omega&space;f_r(\mathbf&space;x,&space;\omega_{\text{i}},&space;\omega_{\text{o}},&space;\lambda,&space;t)&space;L_{\text{i}}(\mathbf&space;x,&space;\omega_{\text{i}},&space;\lambda,&space;t)&space;(\omega_{\text{i}}\cdot\mathbf&space;n)&space;\operatorname&space;d&space;\omega_{\text{i}}" alt="The rendering equation"/>
 </p>
 
-## Simplifying the Rendering Equation
+### Simplifying the Rendering Equation
 
 Most of the time using a simplified version of it is sufficient. The wavelength (![lamda](https://latex.codecogs.com/gif.latex?\lambda)) can usually be ignored because we often use a RGB triple to describe the wavelength of a light source. Also our current screens are only able to emit light in these three wavelength. We basically solve the rendering equations three times for each wavelength instead of using a complete wavelength-spectrum of a 'realistic' lightsource.
 
@@ -32,4 +32,6 @@ The part ![light emition](https://latex.codecogs.com/gif.latex?L_e(\mathbf&space
 These sipmlifications leave us with the following equation sometimes denoted as the reflectance equation:
 
 
-![reflectance equation](https://latex.codecogs.com/gif.latex?L_o(x,\omega_o)&space;=&space;\int\limits_{\Omega}&space;f_r(x,\omega_i,\omega_o)&space;L_i(x,\omega_i)(&space;n&space;\cdot&space;\omega_i)&space;d\omega_i)
+<p align="center">
+   <img src="https://latex.codecogs.com/gif.latex?L_o(x,\omega_o)&space;=&space;\int\limits_{\Omega}&space;f_r(x,\omega_i,\omega_o)&space;L_i(x,\omega_i)(&space;n&space;\cdot&space;\omega_i)&space;d\omega_i" alt="The reflectance equation"/>
+</p>
