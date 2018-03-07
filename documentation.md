@@ -12,11 +12,15 @@
    2. Other methods
 5. Further advanced rendering and lighting methods
 
-## The rendering equation
+## The Rendering Equation
 To synthesise a image from a virtual 3D scene we need a way to describe and calculate how light behaves and interacts with the objects in our scene. Often times it is desirable to produce photorealistic images which means we can use physical observations to base our model on. Kajiya James wrote a paper 1986 titled 'The rendering equation' in which he generalized a variety of older rendering techniques. The equation he came up with is regarded as the best model there is for simulating the behaviour of light. Most rendering algorithms can be considered as approximating his equation more or less accuratly.
 
-This is the equation as presented on wikipedia: 
-![The rendering equation](https://latex.codecogs.com/gif.latex?L_{\text{o}}(\mathbf&space;x,&space;\omega_{\text{o}},&space;\lambda,&space;t)&space;=&space;L_e(\mathbf&space;x,&space;\omega_{\text{o}},&space;\lambda,&space;t)&space;&plus;&space;\int_\Omega&space;f_r(\mathbf&space;x,&space;\omega_{\text{i}},&space;\omega_{\text{o}},&space;\lambda,&space;t)&space;L_{\text{i}}(\mathbf&space;x,&space;\omega_{\text{i}},&space;\lambda,&space;t)&space;(\omega_{\text{i}}\cdot\mathbf&space;n)&space;\operatorname&space;d&space;\omega_{\text{i}})
+This is the equation as presented on wikipedia:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?L_{\text{o}}(\mathbf&space;x,&space;\omega_{\text{o}},&space;\lambda,&space;t)&space;=&space;L_e(\mathbf&space;x,&space;\omega_{\text{o}},&space;\lambda,&space;t)&space;&plus;&space;\int_\Omega&space;f_r(\mathbf&space;x,&space;\omega_{\text{i}},&space;\omega_{\text{o}},&space;\lambda,&space;t)&space;L_{\text{i}}(\mathbf&space;x,&space;\omega_{\text{i}},&space;\lambda,&space;t)&space;(\omega_{\text{i}}\cdot\mathbf&space;n)&space;\operatorname&space;d&space;\omega_{\text{i}}" alt="The rendering equation"/>
+</p>
+
+## Simplifying the Rendering Equation
 
 Most of the time using a simplified version of it is sufficient. The wavelength (![lamda](https://latex.codecogs.com/gif.latex?\lambda)) can usually be ignored because we often use a RGB triple to describe the wavelength of a light source. Also our current screens are only able to emit light in these three wavelength. We basically solve the rendering equations three times for each wavelength instead of using a complete wavelength-spectrum of a 'realistic' lightsource.
 
