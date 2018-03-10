@@ -1,12 +1,12 @@
 # Advanced Lighting
 ## A rough table of content
 1. The rendering equation
-   1. Whats all the fuzz?
-   2. How does it work?
-   3. Limitations
+   1. Overview
+   2. Simplification
+   3. Physics basics
 2. BRDF
    1. Introduction in BRDF
-3. Physically based BRDF (Cook Torrance)
+   2. Cook-Torrance
 4. Global Illumination
    1. Image based lighting
    2. Other methods
@@ -36,6 +36,8 @@ These simplifications leave us with the following equation sometimes denoted as 
    <img src="https://latex.codecogs.com/gif.latex?L_o(x,\omega_o)&space;=&space;\int\limits_{\Omega}&space;f_r(x,\omega_i,\omega_o)&space;L_i(x,\omega_i)(&space;n&space;\cdot&space;\omega_i)&space;d\omega_i" alt="The reflectance equation"/>
 </p>
 
+Which tells us the outgoing (spectral) radiance (![L_o](https://latex.codecogs.com/gif.latex?\L_o)) at point ![x](https://latex.codecogs.com/gif.latex?\x) for the direction (![omega_o](https://latex.codecogs.com/gif.latex?\omega_o))
+
 ### Reflectance Equation in parts
 For now lets think about the integral part ![integral over omgega](https://latex.codecogs.com/gif.latex?\int\limits_{\Omega}[...]d\omega_i) just as the sum over all incomming light directions ![omega](https://latex.codecogs.com/gif.latex?\omega) and let's not worry too much about how ![omega](https://latex.codecogs.com/gif.latex?\omega) itself is modeled.
 
@@ -44,6 +46,10 @@ For now lets think about the integral part ![integral over omgega](https://latex
 So far we did not consider the reflecting materials properties in any way. This is done via the so called Bidirectional reflectance dirstribution function (BRDF). In our equation this is the part ![BRDF](https://latex.codecogs.com/gif.latex?f_r(x,\omega_i,\omega_o)). What this function does is give us a ratio between the quantity of light reflected in the direction ![omega_o](https://latex.codecogs.com/gif.latex?\omega_o) over the quantity of light arrived from the direction ![omega_i](https://latex.codecogs.com/gif.latex?\omega_i). This ratio depends on the angle the light is hitting the surface and on the angle of the direction we are looking from (![omega_o](https://latex.codecogs.com/gif.latex?\omega_o)). This function contains all material properties that have an impact on the reflection behaviour.
 
 
+### Physics basics
+Now that we have a simplified understanding in the components used by the rendering equation we should specify more precisly what terms such as radiance means and how the parameters ![omega_o](https://latex.codecogs.com/gif.latex?\omega_o) are modeled.
 
+#### Radiance and Irradiance
 
+#### Solid Angles
 
