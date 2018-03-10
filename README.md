@@ -3,6 +3,8 @@ This repository contains my theoretical understanding (correct as well as incorr
 
 As of now, all code of prototypes and examples will be available in my fork of [SLProject](https://github.com/s-thoeni/SLProject)
 
+Documentation works can be found in this repo in the file [documentation.md](https://github.com/s-thoeni/prj2-advanced-lighting/blob/master/documentation.md)
+
 ## Abstract
 Finding a way to do photorealistic (i.e physically correct) rendering in real time is considered the holy grail of computer graphics. The goal of this project is to research the (future) industry standard for real time rendering and obtain a theoretical understanding for the methods used. The results will be presented in the form of a documentation available here on github. 
 
